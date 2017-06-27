@@ -1,0 +1,39 @@
+.contacts_form {
+	flex-basis: 65%;
+}
+
+$button_color-blue: #52b3d9;
+$button_color-green: #68c4a4;
+
+$button_hover-blue: #0080c0;
+$button_hover-green: #59E270;
+
+
+@mixin header_button_defination($color, $hover_color) {
+	width: 200px;
+	margin: 10px;
+	padding: 20px 10px;
+	background-color: $color;
+	border-radius: 5px;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	.fa-paper-plane {
+		transform: translate(-6px, 0);
+	}
+
+	&:hover {
+		background-color: $hover_color;
+	}
+}
+
+.message_button {
+	@include header_button_defination($button_color-blue, $button_hover-blue);
+}
+
+.download_button {
+	@include header_button_defination($button_color-green, $button_hover-green);
+}
+

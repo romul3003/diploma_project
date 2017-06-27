@@ -1,2 +1,7 @@
 @import "core/_reset.scss";
-@import "components/werqr.scss";
+@import "core/_base.scss";
+@import "fonts/font-awesome/font-awesome.scss";
+// @import "components/_werqr.scss";
+@import "layout/_header.scss";
+@import "components/_header_buttons.scss";
+@import "components/_contact_info";
