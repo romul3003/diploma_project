@@ -26,7 +26,6 @@
 .header__introduction {
 	@extend .container;
 	display: flex;
-	margin: 0 auto;
 	padding: 124px 0 37px;
 	flex-direction: column;
 }
@@ -95,10 +94,5 @@
 
 	.feedback {
 		flex-direction: column;
-	}
-
-	.contacts_form {
-		display: flex;
-		justify-content: space-around;
 	}
 }
