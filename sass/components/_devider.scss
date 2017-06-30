@@ -1,24 +1,14 @@
 .devider {
-	width: 150px;
+	width: 130px;
 	margin: 0 auto;
 	font-size: 0;
 	padding: 11px 0 24px;
 	display: flex;
 	align-items: center;
 	
-	.grey_line, .rhombus {
-		display: inline-block;
-		font-size: 16px;
-	}
-	
 	.grey_line {
 		margin: 0 7px;
-	}
-	.rhombus {
-		width: 10px;
-		height: 10px;
-		background: #e2e2e2;
-		transform: rotate(45deg);
-		margin: 0 3px;
+		display: inline-block;
+		font-size: 16px;
 	}
 }
