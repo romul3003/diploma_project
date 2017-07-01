@@ -1,0 +1,231 @@
+.skills {
+	margin: 50px 0;
+	background: #1a1e23;
+
+	.title {
+		padding-top: 100px;
+    	padding-bottom: 12px;
+		color: #f1f1f1;
+	}
+
+	.subtitle {
+		text-align: center;
+		padding: 25px 15px 12px;
+		color: #f1f1f1;
+	}
+
+	.rhombus_small {
+		background: #383f48;
+	}
+}
+
+.progress_block {
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.progress__left_side,
+.progress__right_side {
+	flex-basis: 48.25%;
+}
+
+.progress_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 14px 0;
+
+}
+
+.name_of_skill {
+	// width: 22%;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.progress_bar {
+	flex-basis: 73%;
+	height: 10px;
+	border-radius: 3px;
+	background-color: #3a4149;
+}
+
+%progress_scale {
+	height: 10px;
+	border-radius: 3px 0 0 3px;
+	background-color: #41b7d4;
+	background-image: linear-gradient(to right, #53ac8d 0%, #68c3a3 100%);
+	position: relative;
+}
+
+%scale__percent {
+	color: #f1f1f1;
+	font-size: 14px;
+	font-weight: 400;
+	position: absolute;
+	top: -20px;
+	left: 85%;
+}
+
+.progress__left_side {
+	.progress_wrapper:nth-child(1) {
+		.progress_scale {
+			width: 90%;
+			@extend %progress_scale;
+		}
+
+		.scale__percent {
+			@extend %scale__percent;
+		}
+	}
+
+	.progress_wrapper:nth-child(2) {
+		.progress_scale {
+			width: 95%;
+			@extend %progress_scale;
+		}
+
+		.scale__percent {
+			@extend %scale__percent;
+			
+		}
+	}
+
+	.progress_wrapper:nth-child(3) {
+		.progress_scale {
+			width: 95%;
+			@extend %progress_scale;
+		}
+
+		.scale__percent {
+			@extend %scale__percent;
+			
+		}
+	}
+}
+
+.progress__right_side {
+	.progress_wrapper:nth-child(1) {
+		.progress_scale {
+			width: 75%;
+			@extend %progress_scale;
+		}
+
+		.scale__percent {
+			@extend %scale__percent;
+			
+		}
+	}
+
+	.progress_wrapper:nth-child(2) {
+		.progress_scale {
+			width: 95%;
+			@extend %progress_scale;
+		}
+
+		.scale__percent {
+			@extend %scale__percent;
+			
+		}
+	}
+
+	.progress_wrapper:nth-child(3) {
+		.progress_scale {
+			width: 50%;
+			@extend %progress_scale;
+		}
+
+		.scale__percent {
+			@extend %scale__percent;
+			
+		}
+	}
+}
+
+.more_skills_block {
+	padding: 15px;
+}
+
+.more_skills__wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.skill_item {
+	width: 140px;
+	padding: 30px 0;
+	text-align: center;
+	position: relative;
+
+	.name_of_skill {
+		display: block;
+		padding: 20px 0;
+	}
+
+	.scale__percent {
+		@extend %scale__percent;
+		top: 89px;
+		left: 70px;
+		transform: translate(-50%, 0);
+	}
+}
+
+
+
+
+
+@media all and (max-width: 1024px) {
+	.progress_block {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.progress__left_side,
+	.progress__right_side {
+		width: 75%;
+	}
+
+	.progress_bar {
+		flex-basis: 70%;
+	}
+
+	.more_skills__wrapper {
+		width: 75%;
+		margin: 0 auto;
+		justify-content: space-around;
+
+	}
+}
+
+
+@media all and (max-width: 600px) {
+	.progress__left_side,
+	.progress__right_side {
+		width: 85%;
+	}
+
+	.name_of_skill {
+		font-size: 14px;
+	}
+
+	.progress_bar {
+		flex-basis: 60%;
+	}
+
+	.more_skills__wrapper {
+		width: 85%;
+		margin: 0 auto;
+		justify-content: space-around;
+
+	}
+}
+
+@media all and (max-width: 400px) {
+	.progress_bar {
+		flex-basis: 55%;
+	}
+}
