@@ -1,3 +1,66 @@
 .experience {
-	
+	background-image: url('../../pictures/fan_bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	padding: 60px 20px 10px;
+
+	.experience_menu_wrapper {
+		padding: 0 15px;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0; 
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(26, 30, 35, 0.85); 
+	}
+}
+
+.experience__item {
+	color: #fff;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.experience__icon {
+	font-size: 64px;
+}
+
+.experience__counter {
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 15px 0;
+}
+
+.experience__subtitle {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+@media all and (max-width: 400px) {
+	.experience__icon {
+		font-size: 50px;
+	}
+
+	.experience__counter {
+		font-size: 40px;
+	}
+
+	.experience__subtitle {
+		font-size: 12px;
+	}
+
+
 }
