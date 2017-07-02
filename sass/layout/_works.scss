@@ -141,8 +141,17 @@
 
 
 
-@media all and (max-width: 874px) {
+
+@media all and (max-width: 1150px) {
 	.works__portfolio {
+		width: 73%;
 		justify-content: space-around;
+		margin: 0 auto;
 	}
 }
+
+// @media all and (max-width: 874px) {
+// 	.works__portfolio {
+// 		justify-content: space-around;
+// 	}
+// }

@@ -1,0 +1,130 @@
+.latest_post {
+	
+	background: #fff;
+	padding-bottom: 100px;
+
+	.title {
+		padding-top: 100px;
+		padding-bottom: 12px;
+	}
+}
+
+.latest_post__menu {
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	//flex-wrap: wrap;
+}
+
+.latest_post__menu__item {
+	width: 350px;
+	border: 1px solid #eee;
+	border-bottom: 3px double #eee;
+	background-color: #fff;
+	border-radius: 3px;
+	
+}
+
+.post_content_wrapper {
+	padding: 25px 15px 20px;
+	position: relative;
+}
+
+.post__share {
+	display: inline-block;
+    width: 33px;
+    height: 33px;
+    padding: 6px 0;
+    margin: 10px;
+    text-align: center;
+    transform: rotate(45deg);
+    border-radius: 3px;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+
+    .fa-link {
+		transform: rotate(-45deg);
+	}
+
+	background: #68c4a4;
+	&:hover {
+	    background-color: #06a3a3;
+	}
+
+	position: absolute;
+	top: -27px;
+	left: 84%;
+}
+
+.post_title {
+	color: #68c3a3;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.post_text {
+	color: #282828;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 25px;
+	padding-bottom: 15px;
+}
+
+.post_devider {
+	background-color: #eee;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.post_info_wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.post_info__item {
+	font-size: 14px;
+	font-weight: 400;
+	color: #afafaf;
+}
+
+.view_more_btn {
+	display: block;
+	margin: 45px auto;
+	padding: 10px 35px;
+	border-radius: 4px;
+	background-color: #68c3a3;
+	font: 700 14px/28px 'Roboto', Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+
+	&:hover {
+		background: #06a3a3;
+	}
+}
+
+
+
+
+@media all and (max-width: 991px) {
+	.latest_post__menu__item:nth-of-type(3) {
+		display: none;
+	}
+
+	.latest_post__menu {
+		justify-content: space-around;
+		// flex-wrap: wrap;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.latest_post__menu__item:nth-of-type(2) {
+		display: none;
+	}
+
+	.latest_post__menu {
+		//justify-content: center;
+		// flex-wrap: wrap;
+	}
+}
