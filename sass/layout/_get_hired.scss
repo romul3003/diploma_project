@@ -1,0 +1,50 @@
+.get_hired {
+	background: url('../../pictures/desktop.jpg') no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 60px 20px 10px;
+	
+	.get_hired__content_wrapper {
+	position: relative;
+	padding: 15px;
+	z-index: 2;
+	}
+	
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0; 
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(104, 195, 163, 0.76);
+		background-image: linear-gradient(to top, #389474 0%, rgba(104, 195, 163, 0) 100%); 	
+	}
+
+	.title {
+		font-size: 36px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+}
+
+.get_hired__btn {
+	display: block;
+	margin: 45px auto;
+	padding: 10px 45px;
+	border-radius: 6px;
+	border: 1px solid #eeeeee;
+	background-color: rgba(104, 195, 163, 0.76);
+	background-image: linear-gradient(to top, #389474 0%, rgba(104, 195, 163, 0) 100%);
+	font: 700 14px/28px 'Roboto', Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+
+	&:hover {
+		background-image: linear-gradient(to top, #06a3a3 0%, rgba(58, 226, 206, 0) 100%);
+	}
+}
+
+
+
