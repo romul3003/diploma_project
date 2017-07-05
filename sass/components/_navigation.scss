@@ -1,29 +1,43 @@
 .navigation__menu {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	border: 1px solid #eee;
-	border-bottom: 3px double #eee;
-	background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid #eee;
+    border-bottom: 3px double #eee;
+    background: #fff;
+}
+
+@media all and (max-width: 371px) {
+    .navigation__menu {
+        display: none;
+        border-style: none;
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .navigation__menu__item {
-	display: block;
-	padding: 20px 14px;
-	margin-top: -1px;
+    display: block;
+    padding: 20px 14px;
+    margin-top: -1px;
     margin-bottom: -1px;
-	font-size: 1rem;
-	font-weight: 700;
-	line-height: 1.5rem;
-	text-transform: uppercase;
-	color: #282828;
-	border: 1px solid transparent;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    color: #282828;
+    border: 1px solid transparent;
+    &:hover {
+        background: #68c4a4;
+        border-color: #55ae8f;
+        color: #fff;
+    }
+}
 
-	&:hover {
-		background: #68c4a4;
-		border-color: #55ae8f;
-		color: #fff;
-	}
+@media all and (max-width: 371px) {
+    .navigation__menu__item {
+        padding: 10px 14px;
+    }
 }
 
 .navigation__menu__btn {
@@ -32,38 +46,26 @@
     color: #fff;
     background: #52b3d9;
     padding: 10px;
-    display: none; 
+    display: none;
     box-sizing: border-box;
     justify-content: center;
     text-transform: uppercase;
     align-items: center;
-
     &:hover {
-    	background: #0080c0;
+        background: #0080c0;
+    }
+}
+
+@media all and (max-width: 371px) {
+    .navigation__menu__btn {
+        display: flex;
     }
 }
 
 #navigation__menu__checkbox {
-	display: none;	
+    display: none;
 }
 
 #navigation__menu__checkbox:checked ~ .navigation__menu {
-	display: flex;
-}
-
-@media all and (max-width: 371px) {
-	.navigation__menu__btn {
-		display: flex;
-	}
-
-	.navigation__menu {
-		display: none;
-		border-style: none;
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.navigation__menu__item {
-		padding: 10px 14px;
-	}
+    display: flex;
 }
