@@ -6,6 +6,12 @@
 	padding: 0 15px;
 }
 
+@media all and (max-width: 1118px) {
+	.my_skills_menu {
+		justify-content: space-around;
+	}
+}
+
 .my_skills_menu__item {
 	margin: 10px 0;
 	position: relative;
@@ -62,10 +68,6 @@
 }
 
 @media all and (max-width: 1118px) {
-	.my_skills_menu {
-		justify-content: space-around;
-	}
-
 	.my_skills_menu__item {
 		width: 185px;
 		height: 185px;
