@@ -213,8 +213,9 @@
     border-radius: 5px;
     border-bottom: 3px solid #4aa0c2;
     position: relative;
+    transition: 0.5s;
     &:hover {
-        background: #0080c0;
+        background: #035393;
     }
 }
 
@@ -247,8 +248,9 @@
     border-radius: 5px;
     border-bottom: 3px solid #4eb28f;
     position: relative;
+    transition: 0.5s;
     &:hover {
-        background: #59e270;
+        background: #008080;
     }
 }
 

@@ -27,6 +27,7 @@
     text-transform: uppercase;
     color: #282828;
     border: 1px solid transparent;
+    transition: 0.5s;
     &:hover {
         background: #68c4a4;
         border-color: #55ae8f;
@@ -51,8 +52,9 @@
     justify-content: center;
     text-transform: uppercase;
     align-items: center;
+    
     &:hover {
-        background: #0080c0;
+        background: #035393;
     }
 }
 
