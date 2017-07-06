@@ -23,6 +23,7 @@
     border: 3px solid transparent;
     border-radius: 3px;
     position: relative;
+    transition: 0.3s;
     &::after {
         content: "";
         border: 8px solid transparent;
@@ -30,6 +31,7 @@
         left: 50%;
         bottom: -16px;
         transform: translate(-50%, 0);
+        transition: 0.3s;
     }
     &:hover {
         background-color: #68c3a3;
