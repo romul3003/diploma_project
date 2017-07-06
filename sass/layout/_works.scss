@@ -91,18 +91,31 @@
             border-radius: 3px;
             border: 2px solid #68c3a3;
             box-sizing: border-box;
+            transition: 0.5s;
             .fa-search-plus,
             .fa-link {
                 transform: rotate(-45deg);
+                transition: 0.5s;
             }
             &:hover {
                 border-color: #06a3a3;
+                transform: rotate(0deg);
             }
         }
         .portfolio__link {
             background: #68c4a4;
             &:hover {
-                background-color: #06a3a3;
+                background-color: #035393;
+            }
+        }
+        .portfolio__magnifier:hover {
+            .fa-search-plus {
+                transform: rotate(0deg);
+            }
+        }
+        .portfolio__link:hover {
+            .fa-link {
+                transform: rotate(0deg);
             }
         }
         .dark_bg__project_title {
