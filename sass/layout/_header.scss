@@ -103,6 +103,12 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    .header-container__column1 {
+        margin-top: 20px;
+    }
+}
+
 .header-container__column2 {
     position: relative;
     float: left;
