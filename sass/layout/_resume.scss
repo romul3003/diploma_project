@@ -1,10 +1,6 @@
 .resume {
     background: #fff;
     margin: 50px 0;
-    .title {
-        padding-top: 100px;
-        padding-bottom: 12px;
-    }
     .subtitle {
         text-align: center;
         padding-top: 35px;
@@ -12,13 +8,10 @@
     }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 480px) {
     .resume {
-        .title {
-            padding-top: 50px;
-            padding-bottom: 12px;
-        }
-    }
+        margin-top: 27px;
+    }   
 }
 
 $triangle_color--green: #68c4a4;
@@ -62,7 +55,7 @@ $border_color--green: #57b494;
     left: calc(50% - 3px);
     transition: 0.5s;
     .rhombus_small {
-        transition: 0.5s;
+        transition: 0.3s;
     }
 }
 
@@ -82,7 +75,7 @@ $border_color--green: #57b494;
     position: absolute;
     top: 43px;
     left: -50px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 @media all and (max-width: 960px) {
@@ -108,7 +101,7 @@ $border_color--green: #57b494;
     color: #282828;
     font-weight: 700;
     line-height: 1.75rem;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 %horizont_padding_null {
@@ -124,7 +117,7 @@ $border_color--green: #57b494;
     position: relative;
     background: #fff;
     border: 2px solid #efefef;
-    transition: 0.5s;
+    transition: 0.3s;
     &::before {
         content: "";
         width: 0;
@@ -133,7 +126,7 @@ $border_color--green: #57b494;
         position: absolute;
         top: 34px;
         z-index: 2;
-        transition: 0.5s;
+        transition: 0.3s;
     }
     &::after {
         content: "";
@@ -143,12 +136,12 @@ $border_color--green: #57b494;
         position: absolute;
         top: 33px;
         z-index: 1;
-        transition: 0.5s;
+        transition: 0.3s;
     }
     .paragraph {
         @extend %horizont_padding_null;
         color: #282828;
-        transition: 0.5s;
+        transition: 0.3s;
     }
 }
 

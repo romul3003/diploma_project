@@ -1,8 +1,4 @@
 .about_me {
-    .title {
-        padding-top: 100px;
-        padding-bottom: 12px;
-    }
     .subtitle {
         text-align: center;
         padding: 25px 0 12px;
@@ -10,13 +6,5 @@
     .paragraph {
         text-align: center;
         padding-bottom: 14px;
-    }
-}
-
-@media all and (max-width: 480px) {
-    .about_me {
-        .title {
-            padding-top: 75px;
-        }
     }
 }

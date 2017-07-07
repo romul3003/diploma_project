@@ -1,9 +1,11 @@
 .get_in_touch {
     background: #fff;
     padding-bottom: 70px;
-    .title {
-        padding-top: 100px;
-        padding-bottom: 12px;
+}
+
+@media all and (max-width: 480px) {
+    .get_in_touch {
+        padding-bottom: 50px;
     }
 }
 
