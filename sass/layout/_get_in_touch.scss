@@ -22,9 +22,9 @@
 .form_title {
     padding: 10px 0;
     color: #282828;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 1.75rem;
     text-transform: uppercase;
 }
 
@@ -37,7 +37,7 @@
         display: block;
         margin-bottom: -10px;
         // padding: 10px 0;
-        font: 400 14px/28px 'Roboto', Arial, Helvetica, sans-serif;
+        font: 400 0.875rem/1.75rem 'Roboto', Arial, Helvetica, sans-serif;
         color: #282828;
     }
     input,
@@ -50,7 +50,7 @@
         height: 36px;
         border: 1px solid #eee;
         background: #f7f7f7;
-        font: 300 14px/36px 'Roboto', Arial, Helvetica, sans-serif;
+        font: 300 0.875rem/2.25rem 'Roboto', Arial, Helvetica, sans-serif;
         &:hover {
             border-color: #00bc87;
         }
@@ -59,7 +59,7 @@
         height: 140px;
         outline: none;
         resize: none;
-        line-height: 20px;
+        line-height: 1.25rem;
         box-sizing: border-box;
         padding: 10px;
     }
@@ -73,9 +73,10 @@
     border: 1px solid #eeeeee;
     background-color: rgba(104, 195, 163, 0.76);
     background-image: linear-gradient(to top, #389474 0%, rgba(104, 195, 163, 0) 100%);
-    font: 700 14px/28px 'Roboto', Arial, Helvetica, sans-serif;
+    font: 700 0.875rem/1.75rem 'Roboto', Arial, Helvetica, sans-serif;
     color: #fff;
     text-transform: uppercase;
+    transition: color 5s sass;
     &:hover {
         background-image: linear-gradient(to top, #06a3a3 0%, rgba(58, 226, 206, 0) 100%);
     }
@@ -112,14 +113,14 @@
 }
 
 .contacts-title {
-    font: 500 14px 'Roboto';
+    font: 500 0.875rem 'Roboto';
     text-transform: uppercase;
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 .contacts-text {
-    font: 300 14px 'Roboto';
-    line-height: 24px;
+    font: 300 0.875rem 'Roboto';
+    line-height: 1.5rem;
     width: 100%;
 }
 
@@ -161,7 +162,7 @@
     }
     .contacts-title,
     .contacts-text {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 }
 
